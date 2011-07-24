@@ -22,6 +22,7 @@ using namespace std::tr1;
 class CounterManager {
  public:
   CounterManager() {}
+
   void IncrementCounter(string name, int value) {
     if (counters_.count(name) <= 0) {
       counters_[name] = 0;
